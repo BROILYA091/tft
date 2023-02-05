@@ -1,0 +1,18 @@
+#! /bin/sh
+
+echo "Program Build"
+
+gcc -Wall -c main.c tft.c
+gcc -o tftb main.o tft.o -l wiringPi
+rm main.o tft.o
+
+#gcc -Wall -c tft.c
+#gcc -Wall -c main.c
+#gcc -o tftb tft.o main.o -l wiringPi
+#rm tft.o
+#rm main.o
+
+echo "Done!!!"
+
+# $ sudo bash build
+
